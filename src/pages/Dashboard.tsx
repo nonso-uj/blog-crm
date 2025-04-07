@@ -96,7 +96,7 @@ const Dashboard = () => {
       ? posts
       : posts.filter(
           (item: any) =>
-            item?.name?.toString().toLowerCase().indexOf(q.toLowerCase()) > -1
+            item?.title?.toString().toLowerCase().indexOf(q.toLowerCase()) > -1
         );
   console.log("list= ", posts);
 
